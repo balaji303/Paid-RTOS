@@ -1,0 +1,256 @@
+
+--- Module:   C:\qp_lab\qpc\src\qs\qs.c (C)
+C:\qp_lab\qpc\src\qs\qs.c  437  note 9018: union '(unnamed)' declared [MISRA 2012 Rule 19.2, advisory]
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qs\qs_64bit.c (C)
+C:\qp_lab\qpc\src\qs\qs_64bit.c  57  info 713: implicit conversion (assignment) from 'unsigned int' to 'int_fast8_t' 
+    (aka 'int')
+C:\qp_lab\qpc\src\qs\qs_64bit.c  57  note 9034: cannot assign 'unsigned8' to different essential type 'signed32' 
+    [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\src\qs\qs_64bit.c  57  info 737: loss of sign in promotion from 'int_fast8_t' (aka 'int') to 
+    'unsigned int'
+C:\qp_lab\qpc\src\qs\qs_64bit.c  57  note 9029: a signed value and an unsigned value cannot be used together as operands 
+    to != [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\src\qs\qs_64bit.c  60  note 9044: function parameter 'd' modified [MISRA 2012 Rule 17.8, advisory]
+C:\qp_lab\qpc\src\qs\qs_64bit.c  82  info 713: implicit conversion (assignment) from 'unsigned int' to 'int_fast8_t' 
+    (aka 'int')
+C:\qp_lab\qpc\src\qs\qs_64bit.c  82  note 9034: cannot assign 'unsigned8' to different essential type 'signed32' 
+    [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\src\qs\qs_64bit.c  82  info 737: loss of sign in promotion from 'int_fast8_t' (aka 'int') to 
+    'unsigned int'
+C:\qp_lab\qpc\src\qs\qs_64bit.c  82  note 9029: a signed value and an unsigned value cannot be used together as operands 
+    to != [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\src\qs\qs_64bit.c  83  note 9044: function parameter 'format' modified [MISRA 2012 Rule 17.8, advisory]
+C:\qp_lab\qpc\src\qs\qs_64bit.c  85  note 9044: function parameter 'd' modified [MISRA 2012 Rule 17.8, advisory]
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qs\qs_fp.c (C)
+--- Module Wrap-up
+C:\qp_lab\qpc\src\qs\qs_fp.c  94  info 754: local union member 'QS_f64_fmt_(uint8_t, float64_t)::U32Rep::u32' not 
+    referenced
+
+--- Module:   C:\qp_lab\qpc\src\qs\qs_rx.c (C)
+C:\qp_lab\qpc\src\qs\qs_rx.c  934  warning 2445: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' 
+    (aka 'unsigned short *') increases required alignment from 1 to 2
+C:\qp_lab\qpc\src\qs_pkg.h  95  supplemental 893: expanded from macro 'QS_U16_PRE_'
+C:\qp_lab\qpc\src\qs\qs_rx.c  937  warning 2445: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint32_t *' 
+    (aka 'unsigned long *') increases required alignment from 1 to 4
+C:\qp_lab\qpc\src\qs_pkg.h  98  supplemental 893: expanded from macro 'QS_U32_PRE_'
+C:\qp_lab\qpc\src\qs\qs_rx.c  969  warning 2445: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' 
+    (aka 'unsigned short *') increases required alignment from 1 to 2
+C:\qp_lab\qpc\src\qs\qs_rx.c  973  warning 2445: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint32_t *' 
+    (aka 'unsigned long *') increases required alignment from 1 to 4
+C:\qp_lab\qpc\src\qs\qs_rx.c  1249  warning 2445: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' 
+    (aka 'unsigned short *') increases required alignment from 1 to 2
+C:\qp_lab\qpc\src\qs\qs_rx.c  1252  warning 2445: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint32_t *' 
+    (aka 'unsigned long *') increases required alignment from 1 to 4
+C:\qp_lab\qpc\src\qs\qs_rx.c  224  note 9026: function-like macro, 'QS_RX_AT_', defined 
+    [MISRA 2012 Directive 4.9, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  227  note 9026: function-like macro, 'QS_RX_TRAN_', defined 
+    [MISRA 2012 Directive 4.9, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  137  note 9018: union 'Variant' declared [MISRA 2012 Rule 19.2, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  292  note 904: return statement before end of function 'QS_RX_PUT' 
+    [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  295  note 904: return statement before end of function 'QS_RX_PUT' 
+    [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  311  note 904: return statement before end of function 'QS_rxGetNfree' 
+    [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  314  note 904: return statement before end of function 'QS_rxGetNfree' 
+    [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  317  note 904: return statement before end of function 'QS_rxGetNfree' 
+    [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  314  info 834: operator '-' followed by operator '-' could be confusing without 
+    parentheses
+C:\qp_lab\qpc\src\qs\qs_rx.c  317  info 834: operator '-' followed by operator '-' could be confusing without 
+    parentheses
+C:\qp_lab\qpc\src\qs\qs_rx.c  377  note 9085: statement or comment should appear in default case 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.4, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  349  note 9079: conversion from pointer to void to other pointer type ('QHsm *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  351  note 9079: conversion from pointer to void to other pointer type ('QHsm *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  354  note 9079: conversion from pointer to void to other pointer type ('QMPool *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  356  note 9079: conversion from pointer to void to other pointer type ('QMPool *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  360  note 9079: conversion from pointer to void to other pointer type 
+    ('QEQueue *' (aka 'struct QEQueue *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  362  note 9079: conversion from pointer to void to other pointer type 
+    ('QEQueue *' (aka 'struct QEQueue *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  366  note 9079: conversion from pointer to void to other pointer type ('QTimeEvt *' 
+    (aka 'struct QTimeEvt *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  368  note 9079: conversion from pointer to void to other pointer type ('QTimeEvt *' 
+    (aka 'struct QTimeEvt *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  370  note 9079: conversion from pointer to void to other pointer type ('QTimeEvt *' 
+    (aka 'struct QTimeEvt *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  372  note 9079: conversion from pointer to void to other pointer type ('QTimeEvt *' 
+    (aka 'struct QTimeEvt *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  374  note 9079: conversion from pointer to void to other pointer type ('QTimeEvt *' 
+    (aka 'struct QTimeEvt *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  394  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  224  supplemental 893: expanded from macro 'QS_RX_AT_'
+C:\qp_lab\qpc\src\qs\qs_rx.c  627  note 9029: an unsigned value and a signed value cannot be used together as operands 
+    to == [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  734  note 9029: a signed value and an unsigned value cannot be used together as operands 
+    to * [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  791  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  923  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  922  note 9079: conversion from pointer to void to other pointer type 
+    ('uint8_t *' (aka 'unsigned char *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  939  note 9085: statement or comment should appear in default case 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.4, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  931  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  934  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  934  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qs_rx.c  934  note 9087: cast from pointer to object type ('uint8_t *' (aka 'unsigned char *')) to 
+    pointer to different object type ('uint16_t *' (aka 'unsigned short *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  937  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  937  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qs_rx.c  937  note 9087: cast from pointer to object type ('uint8_t *' (aka 'unsigned char *')) to 
+    pointer to different object type ('uint32_t *' (aka 'unsigned long *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  962  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  961  note 9079: conversion from pointer to void to other pointer type 
+    ('uint8_t *' (aka 'unsigned char *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  975  note 9085: statement or comment should appear in default case 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.4, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  966  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  969  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  969  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qs_rx.c  969  note 9087: cast from pointer to object type ('uint8_t *' (aka 'unsigned char *')) to 
+    pointer to different object type ('uint16_t *' (aka 'unsigned short *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  973  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  973  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qs_rx.c  973  note 9087: cast from pointer to object type ('uint8_t *' (aka 'unsigned char *')) to 
+    pointer to different object type ('uint32_t *' (aka 'unsigned long *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  982  note 9030: cannot cast an unsigned value to an enum type 
+    [MISRA 2012 Rule 10.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1016  note 923: explicit cast from 'QSObj' (aka 'unsigned long') to 'void *' 
+    [MISRA 2012 Rule 11.6, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1022  note 9078: conversion between object pointer type 'QActive *' 
+    (aka 'struct QActive *') and integer type 'QSObj' (aka 'unsigned long') [MISRA 2012 Rule 11.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1023  note 9029: an unsigned value and a signed value cannot be used together as operands 
+    to == [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1029  note 9034: cannot assign 'enum (QSpyRxRecords)' to different essential type 
+    'unsigned8' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1039  note 923: explicit cast from 'QSObj' (aka 'unsigned long') to 'void *' 
+    [MISRA 2012 Rule 11.6, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1040  note 923: explicit cast from 'QSObj' (aka 'unsigned long') to 'void *' 
+    [MISRA 2012 Rule 11.6, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1042  note 9030: cannot cast an unsigned value to an enum type 
+    [MISRA 2012 Rule 10.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1064  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\include\qf.h  292  supplemental 893: expanded from macro 'QACTIVE_POST_X'
+C:\qp_lab\qpc\src\qs\qs_rx.c  1064  note 9087: cast from pointer to object type ('const struct QHsmVtable *') to pointer 
+    to different object type ('const QActiveVtable *') [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\include\qf.h  292  supplemental 893: expanded from macro 'QACTIVE_POST_X'
+C:\qp_lab\qpc\src\qs\qs_rx.c  1082  note 9079: conversion from pointer to void to other pointer type ('QHsm *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1082  note 9079: conversion from pointer to void to other pointer type ('QHsm *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1099  note 9079: conversion from pointer to void to other pointer type ('QHsm *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1099  note 9079: conversion from pointer to void to other pointer type ('QHsm *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1099  note 9079: conversion from pointer to void to other pointer type ('QHsm *') 
+    [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1110  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\include\qf.h  292  supplemental 893: expanded from macro 'QACTIVE_POST_X'
+C:\qp_lab\qpc\src\qs\qs_rx.c  1110  note 9087: cast from pointer to object type ('const struct QHsmVtable *') to pointer 
+    to different object type ('const QActiveVtable *') [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\include\qf.h  292  supplemental 893: expanded from macro 'QACTIVE_POST_X'
+C:\qp_lab\qpc\src\qs\qs_rx.c  1111  note 9079: conversion from pointer to void to other pointer type 
+    ('QActive *' (aka 'struct QActive *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1111  note 9079: conversion from pointer to void to other pointer type 
+    ('QActive *' (aka 'struct QActive *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1197  note 9085: statement or comment should appear in default case 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.4, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1243  note 9016: performing pointer arithmetic via addition 
+    [MISRA 2012 Rule 18.4, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1242  note 9079: conversion from pointer to void to other pointer type 
+    ('uint8_t *' (aka 'unsigned char *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1249  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qs_rx.c  1249  note 9087: cast from pointer to object type ('uint8_t *' (aka 'unsigned char *')) to 
+    pointer to different object type ('uint16_t *' (aka 'unsigned short *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1252  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qs_rx.c  1252  note 9087: cast from pointer to object type ('uint8_t *' (aka 'unsigned char *')) to 
+    pointer to different object type ('uint32_t *' (aka 'unsigned long *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1286  note 9074: conversion between pointer to function type 'void (*)(void)' and 
+    differing type 'QSFun' (aka 'unsigned long') [MISRA 2012 Rule 11.1, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1286  note 923: explicit cast from 'void (*const)(void)' to 'QSFun' (aka 'unsigned long') 
+    [MISRA 2012 Rule 11.6, required]
+C:\qp_lab\qpc\src\qs\qs_rx.c  1286  note 9078: conversion between object pointer type 'void (*const)(void)' and integer 
+    type 'QSFun' (aka 'unsigned long') [MISRA 2012 Rule 11.4, advisory]
+--- Module Wrap-up
+C:\qp_lab\qpc\src\qs\qs_rx.c  122  note 9045: complete definition of '(anonymous)' is unnecessary in this translation 
+    unit [MISRA 2012 Directive 4.8, advisory]
+C:\qp_lab\qpc\src\qs\qs_rx.c  123  info 754: local struct member 'AFltVar::prio' not referenced
+C:\qp_lab\qpc\src\qs\qs_rx.c  143  info 754: local union member 'Variant::aFlt' not referenced
+
+--- Module:   C:\qp_lab\qpc\src\qs\qutest.c (C)
+C:\qp_lab\qpc\src\qs\qutest.c  179  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qutest.c  179  note 9087: cast from pointer to object type ('QHsm *') to pointer to different 
+    object type ('const QActive *' (aka 'const struct QActive *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qutest.c  179  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qutest.c  179  note 9087: cast from pointer to object type ('QHsm *') to pointer to different 
+    object type ('const QActive *' (aka 'const struct QActive *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qutest.c  193  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qutest.c  193  note 9087: cast from pointer to object type ('QHsm *') to pointer to different 
+    object type ('const QActive *' (aka 'const struct QActive *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qutest.c  193  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpc\src\qs\qutest.c  193  note 9087: cast from pointer to object type ('QHsm *') to pointer to different 
+    object type ('const QActive *' (aka 'const struct QActive *')) [MISRA 2012 Rule 11.3, required]
+C:\qp_lab\qpc\src\qs\qutest.c  302  note 904: return statement before end of function 'QS_processTestEvts_' 
+    [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\src\qs\qutest.c  349  note 9079: conversion from pointer to void to other pointer type ('QTimeEvt *' 
+    (aka 'struct QTimeEvt *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qutest.c  355  note 9079: conversion from pointer to void to other pointer type 
+    ('QActive *' (aka 'struct QActive *')) [MISRA 2012 Rule 11.5, advisory]
+C:\qp_lab\qpc\src\qs\qutest.c  403  note 9079: conversion from pointer to void to other pointer type ('QTimeEvt *' 
+    (aka 'struct QTimeEvt *')) [MISRA 2012 Rule 11.5, advisory]
+--- Module Wrap-up
+C:\qp_lab\qpc\src\qs\qutest.c  143  info 818: parameter 'qSto' of function 'QActiveDummy_start_(QActive *const, 
+    uint_fast8_t, const QEvt **const, uint_fast16_t, void *, uint_fast16_t, const void *const)' could be pointer to 
+    const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\src\qs\qutest.c  144  info 818: parameter 'stkSto' of function 'QActiveDummy_start_(QActive *const, 
+    uint_fast8_t, const QEvt **const, uint_fast16_t, void *, uint_fast16_t, const void *const)' could be pointer to 
+    const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\src\qs\qutest.c  171  info 818: parameter 'me' of function 'QActiveDummy_init_(QHsm *const, const void 
+    *const, const uint_fast8_t)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\src\qs\qutest.c  186  info 818: parameter 'me' of function 'QActiveDummy_dispatch_(QHsm *const, const QEvt 
+    *const, const uint_fast8_t)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+Count   Type    Number  Text
+
+2       info    713     implicit conversion (__context__) from __type__ to __type__
+2       info    737     loss of sign in promotion from __type__ to __type__
+3       info    754     local __string__ member __symbol__ not referenced
+4       info    818     parameter __symbol__ of function __symbol__ could be pointer to const
+12      info    826     suspicious pointer-to-pointer conversion (area too small)
+2       info    834     operator '__operator__' followed by operator '__operator__' could be confusing without parentheses
+7       supplemental    893     expanded from macro
+6       note    904     return statement before end of function __symbol__
+4       note    923     explicit cast from __type__ to __type__
+6       warning 2445    cast from __type__ to __type__ increases required alignment from __integer__ to __integer__
+11      note    9016    performing pointer arithmetic via __addition/subtraction__
+2       note    9018    union __symbol__ declared
+2       note    9026    function-like macro, '__macro__', defined
+5       note    9029    __essential-type__ value and __essential-type__ value cannot be used together as operands to __operator__
+2       note    9030    cannot cast __essential-type__ value to __essential-type__ type
+3       note    9034    cannot assign '__essential-type__' to __narrow/different__ essential type '__essential-type__'
+3       note    9044    function parameter __symbol__ modified
+1       note    9045    complete definition of __symbol__ is unnecessary in this translation unit
+1       note    9074    conversion between pointer to function type __type__ and differing type __type__
+2       note    9078    conversion between object pointer type __type__ and integer type __type__
+24      note    9079    conversion from pointer to void to other pointer type (__type__)
+4       note    9085    statement or comment should appear in default case
+12      note    9087    cast from pointer to object type (__type__) to pointer to different object type (__type__)

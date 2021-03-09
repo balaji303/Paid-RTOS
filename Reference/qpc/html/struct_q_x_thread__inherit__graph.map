@@ -1,0 +1,5 @@
+<map id="QXThread" name="QXThread">
+<area shape="rect" id="node1" title="eXtended (blocking) thread of the QXK preemptive kernel" alt="" coords="55,579,134,671"/>
+<area shape="rect" id="node2" href="$struct_q_active.html" title="Active Object base class (based on QHsm implementation)" alt="" coords="5,263,184,531"/>
+<area shape="rect" id="node3" href="$struct_q_hsm.html" title="Hierarchical State Machine class." alt="" coords="21,5,168,215"/>
+</map>

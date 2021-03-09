@@ -1,0 +1,18 @@
+
+--- Module:   C:\qp_lab\qpc\src\qxk\qxk.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qxk\qxk_mutex.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qxk\qxk_sema.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qxk\qxk_xthr.c (C)
+C:\qp_lab\qpc\src\qxk\qxk_xthr.c  147  info 2707: function 'QXThread_init_' could be declared as 'noreturn'
+C:\qp_lab\qpc\src\qxk\qxk_xthr.c  163  info 2707: function 'QXThread_dispatch_' could be declared as 'noreturn'
+C:\qp_lab\qpc\src\qxk\qxk_xthr.c  431  info 2707: function 'QXThread_postLIFO_' could be declared as 'noreturn'
+--- Module Wrap-up
+Count   Type    Number  Text
+
+3       info    2707    function __symbol__ could be declared as 'noreturn'

@@ -1,0 +1,16 @@
+<map id="qs_port.h" name="qs_port.h">
+<area shape="rect" id="node1" title="QS/C port to a 32&#45;bit CPU and a generic C compiler." alt="" coords="347,5,423,32"/>
+<area shape="rect" id="node2" href="$qxk_2qf__port_8h.html" title="QF/C port example for QXK, generic C compiler." alt="" coords="307,80,379,107"/>
+<area shape="rect" id="node14" href="$qs_8h.html" title="QS/C platform&#45;independent public interface." alt="" coords="404,80,451,107"/>
+<area shape="rect" id="node3" href="$qep__port_8h.html" title="QEP/C port, generic C11 compiler." alt="" coords="122,155,205,181"/>
+<area shape="rect" id="node7" href="$qxk__port_8h.html" title="QXK/C port example for a generic C compiler." alt="" coords="259,155,342,181"/>
+<area shape="rect" id="node12" href="$qf_8h.html" title="QF/C platform&#45;independent public interface." alt="" coords="366,155,409,181"/>
+<area shape="rect" id="node13" href="$qxthread_8h.html" title="QXK/C eXtended (blocking) thread." alt="" coords="433,155,515,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,71,256"/>
+<area shape="rect" id="node5" href="$stdbool_8h.html" title="Boolean type and constansts. WG14/N843 C99 Standard, Section 7.16." alt="" coords="95,229,170,256"/>
+<area shape="rect" id="node6" href="$qep_8h.html" title="Public QEP/C interface." alt="" coords="195,229,249,256"/>
+<area shape="rect" id="node8" href="$qxk_8h.html" title="QXK/C (preemptive dual&#45;mode kernel) platform&#45;independent public interface." alt="" coords="273,229,328,256"/>
+<area shape="rect" id="node9" href="$qequeue_8h.html" title="QP natvie, platform&#45;independent, thread&#45;safe event queue interface." alt="" coords="155,304,238,331"/>
+<area shape="rect" id="node10" href="$qmpool_8h.html" title="QP native, platform&#45;independent memory pool QMPool interface." alt="" coords="262,304,337,331"/>
+<area shape="rect" id="node11" href="$qpset_8h.html" title="QP native, platform&#45;independent priority sets of 32 or 64 elements." alt="" coords="361,304,427,331"/>
+</map>

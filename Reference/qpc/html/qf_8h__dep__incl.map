@@ -1,0 +1,7 @@
+<map id="qf.h" name="qf.h">
+<area shape="rect" id="node1" title="QF/C platform&#45;independent public interface." alt="" coords="116,5,159,32"/>
+<area shape="rect" id="node2" href="$qk_2qf__port_8h.html" title="QF/C port example for QK, generic C compiler." alt="" coords="5,80,77,107"/>
+<area shape="rect" id="node3" href="$qv_2qf__port_8h.html" title="QF/C port example for QV, generic C compiler." alt="" coords="101,80,173,107"/>
+<area shape="rect" id="node4" href="$qxk_2qf__port_8h.html" title="QF/C port example for QXK, generic C compiler." alt="" coords="197,80,269,107"/>
+<area shape="rect" id="node5" href="$qxk_2qs__port_8h.html" title="QS/C port to a 32&#45;bit CPU and a generic C compiler." alt="" coords="195,155,271,181"/>
+</map>

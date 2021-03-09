@@ -1,0 +1,6 @@
+<map id="QActive" name="QActive">
+<area shape="rect" id="node1" title="Active Object base class (based on QHsm implementation)" alt="" coords="5,263,184,531"/>
+<area shape="rect" id="node3" href="$struct_q_ticker.html" title="QTicker Active Object class." alt="" coords="13,586,80,663"/>
+<area shape="rect" id="node4" href="$struct_q_x_thread.html" title="eXtended (blocking) thread of the QXK preemptive kernel" alt="" coords="105,579,183,671"/>
+<area shape="rect" id="node2" href="$struct_q_hsm.html" title="Hierarchical State Machine class." alt="" coords="21,5,168,215"/>
+</map>

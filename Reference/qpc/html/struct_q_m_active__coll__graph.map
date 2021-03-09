@@ -1,0 +1,13 @@
+<map id="QMActive" name="QMActive">
+<area shape="rect" id="node1" title="QMActive active object base class (based on QMsm implementation)" alt="" coords="5,491,132,568"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,263,79,340"/>
+<area shape="rect" id="node3" href="$struct_q_active.html" title="Active Object base class (based on QHsm implementation)" alt="" coords="103,175,282,428"/>
+<area shape="rect" id="node8" href="$struct_q_x_thread.html" title="eXtended (blocking) thread of the QXK preemptive kernel" alt="" coords="336,491,415,568"/>
+<area shape="rect" id="node4" href="$struct_q_hsm.html" title="Hierarchical State Machine class." alt="" coords="209,815,355,995"/>
+<area shape="rect" id="node5" href="$qep_8h.html#union_q_hsm_attr" title="Attribute of for the QHsm class (Hierarchical State Machine)." alt="" coords="501,645,581,723"/>
+<area shape="rect" id="node6" href="$qep_8h.html#struct_q_m_state" title="State object for the QMsm class (QM State Machine)." alt="" coords="698,241,805,362"/>
+<area shape="rect" id="node10" href="$qep_8h.html#struct_q_m_tran_act_table" title="Transition&#45;Action Table for the Meta State Machine." alt="" coords="627,491,745,568"/>
+<area shape="rect" id="node7" href="$struct_q_evt.html" title="Event class." alt="" coords="426,5,501,112"/>
+<area shape="rect" id="node9" href="$struct_q_time_evt.html" title="Time Event class." alt="" coords="307,211,489,391"/>
+<area shape="rect" id="node11" href="$struct_q_hsm_vtable.html" title="Virtual table for the QHsm class." alt="" coords="605,631,732,737"/>
+</map>

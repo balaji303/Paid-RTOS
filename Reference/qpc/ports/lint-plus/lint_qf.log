@@ -1,0 +1,46 @@
+
+--- Module:   C:\qp_lab\qpc\src\qf\qep_hsm.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qep_msm.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_act.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_actq.c (C)
+C:\qp_lab\qpc\src\qf\qf_actq.c  538  info 2707: function 'QTicker_postLIFO_' could be declared as 'noreturn'
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_defer.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_dyn.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_mem.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_ps.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_qact.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_qeq.c (C)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_qmact.c (C)
+C:\qp_lab\qpc\src\qf\qf_qmact.c  95  note 9087: cast from pointer to object type ('QHsm *') to pointer to different 
+    object type ('QMsm *') [MISRA 2012 Rule 11.3, required]
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\src\qf\qf_time.c (C)
+C:\qp_lab\qpc\src\qf\qf_time.c  377  note 9079: conversion from pointer to void to other pointer type 
+    ('QActive *' (aka 'struct QActive *')) [MISRA 2012 Rule 11.5, advisory]
+--- Module Wrap-up
+Count   Type    Number  Text
+
+1       info    2707    function __symbol__ could be declared as 'noreturn'
+1       note    9079    conversion from pointer to void to other pointer type (__type__)
+1       note    9087    cast from pointer to object type (__type__) to pointer to different object type (__type__)
