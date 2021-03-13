@@ -23,7 +23,8 @@ void BSP_init(void) {
     GPIOF_AHB->DEN |= (LED_RED | LED_BLUE | LED_GREEN);
 		*/
 		RCC->AHB1ENR|=1;
-    SystemCoreClockUpdate();
+		GPIOA->MODER |= 0x400;
+		SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / BSP_TICKS_PER_SEC);
 
     __enable_irq();
@@ -31,7 +32,6 @@ void BSP_init(void) {
 
 uint32_t BSP_tickCtr(void) {
     uint32_t tickCtr;
-
     __disable_irq();
     tickCtr = l_tickCtr;
     __enable_irq();
@@ -46,11 +46,11 @@ void BSP_delay(uint32_t ticks) {
 }
 
 void BSP_ledRedOn(void) {
-    GPIOF_AHB->DATA_Bits[LED_RED] = LED_RED;
+    GPIOA->ODR |=0x20;
 }
 
 void BSP_ledRedOff(void) {
-    GPIOF_AHB->DATA_Bits[LED_RED] = 0U;
+    GPIOA->ODR &=~0x20;
 }
 
 void BSP_ledBlueOn(void) {
