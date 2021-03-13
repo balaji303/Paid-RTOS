@@ -17,11 +17,12 @@ void SysTick_Handler(void) {
 }
 
 void BSP_init(void) {
-    SYSCTL->RCGCGPIO  |= (1U << 5); /* enable Run mode for GPIOF */
-    SYSCTL->GPIOHBCTL |= (1U << 5); /* enable AHB for GPIOF */
+    /*SYSCTL->RCGCGPIO  |= (1U << 5);  //enable Run mode for GPIOF
+    SYSCTL->GPIOHBCTL |= (1U << 5); //enable AHB for GPIOF 
     GPIOF_AHB->DIR |= (LED_RED | LED_BLUE | LED_GREEN);
     GPIOF_AHB->DEN |= (LED_RED | LED_BLUE | LED_GREEN);
-
+		*/
+		RCC->AHB1ENR|=1;
     SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / BSP_TICKS_PER_SEC);
 
