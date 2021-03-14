@@ -28,27 +28,12 @@ Project File Date:  03/09/2021
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 assembling startup_stm32f446xx.s...
-compiling bsp.c...
-..\..\Reference\lesson22\bsp.c(20): error:  #20: identifier "SYSCTL" is undefined
-      SYSCTL->RCGCGPIO  |= (1U << 5); /* enable Run mode for GPIOF */
-..\..\Reference\lesson22\bsp.c(22): error:  #20: identifier "GPIOF_AHB" is undefined
-      GPIOF_AHB->DIR |= (LED_RED | LED_BLUE | LED_GREEN);
-..\..\Reference\lesson22\bsp.c(48): error:  #20: identifier "GPIOF_AHB" is undefined
-      GPIOF_AHB->DATA_Bits[LED_RED] = LED_RED;
-..\..\Reference\lesson22\bsp.c(52): error:  #20: identifier "GPIOF_AHB" is undefined
-      GPIOF_AHB->DATA_Bits[LED_RED] = 0U;
-..\..\Reference\lesson22\bsp.c(56): error:  #20: identifier "GPIOF_AHB" is undefined
-      GPIOF_AHB->DATA_Bits[LED_BLUE] = LED_BLUE;
-..\..\Reference\lesson22\bsp.c(60): error:  #20: identifier "GPIOF_AHB" is undefined
-      GPIOF_AHB->DATA_Bits[LED_BLUE] = 0U;
-..\..\Reference\lesson22\bsp.c(64): error:  #20: identifier "GPIOF_AHB" is undefined
-      GPIOF_AHB->DATA_Bits[LED_GREEN] = LED_GREEN;
-..\..\Reference\lesson22\bsp.c(68): error:  #20: identifier "GPIOF_AHB" is undefined
-      GPIOF_AHB->DATA_Bits[LED_GREEN] = 0U;
-..\..\Reference\lesson22\bsp.c: 0 warnings, 8 errors
 compiling main.c...
+compiling bsp.c...
 compiling system_stm32f4xx.c...
-".\Objects\Mod1.axf" - 8 Error(s), 0 Warning(s).
+linking...
+Program Size: Code=1382 RO-data=510 RW-data=16 ZI-data=1952  
+".\Objects\Mod1.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -74,13 +59,12 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.3.0
 
    * Component: Keil::Device:Startup:2.6.3
-      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s
       Source file:   MDK\Device\Source\ARM\STM32F446xx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s
       Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Target not created.
-Build Time Elapsed:  00:00:32
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

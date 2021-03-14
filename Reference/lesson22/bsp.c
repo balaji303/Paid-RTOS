@@ -1,14 +1,8 @@
-/* Board Support Package (BSP) for the EK-TM4C123GXL board */
+/* Board Support Package (BSP) for the STM32F446RE board */
 #include <stdint.h>  /* Standard integers. WG14/N843 C99 Standard */
 
 #include "bsp.h"
-#include "stm32f4xx.h"                  // Device header
-
-
-/* on-board LEDs */
-#define LED_RED   (1U << 1)
-#define LED_BLUE  (1U << 2)
-#define LED_GREEN (1U << 3)
+#include "stm32f4xx.h"                  /* Device header */
 
 static uint32_t volatile l_tickCtr;
 
@@ -26,7 +20,6 @@ void BSP_init(void) {
 		GPIOA->MODER |= 0x400;
 		SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / BSP_TICKS_PER_SEC);
-
     __enable_irq();
 }
 
@@ -35,7 +28,6 @@ uint32_t BSP_tickCtr(void) {
     __disable_irq();
     tickCtr = l_tickCtr;
     __enable_irq();
-
     return tickCtr;
 }
 
@@ -45,28 +37,28 @@ void BSP_delay(uint32_t ticks) {
     }
 }
 
-void BSP_ledRedOn(void) {
+void BSP_ledRedOn(void) {      /* Turns D13 PIN HIGH*/
     GPIOA->ODR |=0x20;
 }
 
-void BSP_ledRedOff(void) {
+void BSP_ledRedOff(void) {     /* Turns D13 PIN LOW*/
     GPIOA->ODR &=~0x20;
 }
 
-void BSP_ledBlueOn(void) {
-    GPIOF_AHB->DATA_Bits[LED_BLUE] = LED_BLUE;
+void BSP_ledBlueOn(void) {     /* Turns D12 PIN HIGH*/
+    GPIOA->ODR |=0x40;
 }
 
-void BSP_ledBlueOff(void) {
-    GPIOF_AHB->DATA_Bits[LED_BLUE] = 0U;
+void BSP_ledBlueOff(void) {    /* Turns D12 PIN LOW*/
+    GPIOA->ODR &=~0x40;
 }
 
-void BSP_ledGreenOn(void) {
-    GPIOF_AHB->DATA_Bits[LED_GREEN] = LED_GREEN;
+void BSP_ledGreenOn(void) {    /* Turns D11 PIN HIGH*/
+    GPIOA->ODR |=0x80;
 }
 
-void BSP_ledGreenOff(void) {
-    GPIOF_AHB->DATA_Bits[LED_GREEN] = 0U;
+void BSP_ledGreenOff(void) {   /* Turns D11 PIN LOW*/
+    GPIOA->ODR &=~0x80;
 }
 
 
