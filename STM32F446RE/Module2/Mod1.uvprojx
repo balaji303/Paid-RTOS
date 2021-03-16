@@ -395,6 +395,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Paid-RTOS</GroupName>
+          <Files>
+            <File>
+              <FileName>Paid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Paid.h</FilePath>
+            </File>
+            <File>
+              <FileName>Paid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Paid.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
