@@ -226,8 +226,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Paid.h</PathWithFileName>
-      <FilenameWithoutPath>Paid.h</FilenameWithoutPath>
+      <PathWithFileName>.\paid.h</PathWithFileName>
+      <FilenameWithoutPath>paid.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -238,8 +238,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Paid.c</PathWithFileName>
-      <FilenameWithoutPath>Paid.c</FilenameWithoutPath>
+      <PathWithFileName>.\paid.c</PathWithFileName>
+      <FilenameWithoutPath>paid.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

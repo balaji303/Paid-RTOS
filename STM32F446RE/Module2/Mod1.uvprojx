@@ -398,14 +398,14 @@
           <GroupName>Paid-RTOS</GroupName>
           <Files>
             <File>
-              <FileName>Paid.h</FileName>
+              <FileName>paid.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Paid.h</FilePath>
+              <FilePath>.\paid.h</FilePath>
             </File>
             <File>
-              <FileName>Paid.c</FileName>
+              <FileName>paid.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Paid.c</FilePath>
+              <FilePath>.\paid.c</FilePath>
             </File>
           </Files>
         </Group>

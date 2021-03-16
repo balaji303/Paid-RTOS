@@ -906,20 +906,20 @@ ARM Macro Assembler    Page 14
               00000400 
               00000200 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=.\objects\startup_stm32f446xx.d -o.\objects\startup_stm32f446xx
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4 --apcs=interw
+ork --depend=.\objects\startup_stm32f446xx.d -o.\objects\startup_stm32f446xx.o 
 
 
 
 ARM Macro Assembler    Page 15 
 
 
-.o -I.\RTE\_Target_1 -IC:\Users\Balaji\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\
-CMSIS\Core\Include -IC:\Users\Balaji\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP
-\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --predefine="__EVAL SETA 1" -
--predefine="__UVISION_VERSION SETA 528" --predefine="_RTE_ SETA 1" --predefine=
-"STM32F446xx SETA 1" --list=.\listings\startup_stm32f446xx.lst RTE\Device\STM32
-F446RETx\startup_stm32f446xx.s
+-I.\RTE\_Target_1 -IC:\Users\Balaji\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMS
+IS\Core\Include -IC:\Users\Balaji\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.
+14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --predefine="__EVAL SETA 1" --pr
+edefine="__UVISION_VERSION SETA 528" --predefine="_RTE_ SETA 1" --predefine="ST
+M32F446xx SETA 1" --predefine="Heap SETA 16" --list=.\listings\startup_stm32f44
+6xx.lst RTE\Device\STM32F446RETx\startup_stm32f446xx.s
 
 
 

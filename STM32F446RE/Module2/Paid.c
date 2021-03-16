@@ -28,7 +28,7 @@
 * https://www.state-machine.com
 ****************************************************************************/
 #include <stdint.h>
-#include "Paid.h"
+#include "paid.h"
 
 OSThread * volatile OS_curr; /* pointer to the current thread */
 OSThread * volatile OS_next; /* pointer to the next thread to run */

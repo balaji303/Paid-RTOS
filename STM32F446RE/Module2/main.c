@@ -1,10 +1,11 @@
 #include <stdint.h>
+#include "paid.h"
 #include "bsp.h"
 
 /*Stack for Blinky1*/
 uint32_t stack_blinky1[40] __attribute__ ((aligned (8)));
 /*Stack pointer that points the End of Stack-High Memory*/
-uint32_t *sp_blinky1 = &stack_blinky1[40];
+OSThread blinky1;
 void main_blinky1() {
     while (1) {
         BSP_ledGreenOn();
@@ -17,7 +18,7 @@ void main_blinky1() {
 /*Stack for Blinky2*/
 uint32_t stack_blinky2[40] __attribute__ ((aligned (8)));
 /*Stack pointer that points the End of Stack-High Memory*/
-uint32_t *sp_blinky2 = &stack_blinky2[40];
+OSThread blinky2;
 void main_blinky2() {
     while (1) {
         BSP_ledBlueOn();
