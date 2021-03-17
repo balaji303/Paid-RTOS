@@ -36,7 +36,23 @@ void OSThread_start(
     void *stkSto, uint32_t stkSize);
 
 {
-	
+	  *(--sp_blinky1) = (1U << 24);  /* xPSR */
+    *(--sp_blinky1) = (uint32_t)&main_blinky1; /* PC */
+    *(--sp_blinky1) = 0x0000000EU; /* LR  */
+    *(--sp_blinky1) = 0x0000000CU; /* R12 */
+    *(--sp_blinky1) = 0x00000003U; /* R3  */
+    *(--sp_blinky1) = 0x00000002U; /* R2  */
+    *(--sp_blinky1) = 0x00000001U; /* R1  */
+    *(--sp_blinky1) = 0x00000000U; /* R0  */
+    /* additionally, fake registers R4-R11 */
+    *(--sp_blinky1) = 0x0000000BU; /* R11 */
+    *(--sp_blinky1) = 0x0000000AU; /* R10 */
+    *(--sp_blinky1) = 0x00000009U; /* R9 */
+    *(--sp_blinky1) = 0x00000008U; /* R8 */
+    *(--sp_blinky1) = 0x00000007U; /* R7 */
+    *(--sp_blinky1) = 0x00000006U; /* R6 */
+    *(--sp_blinky1) = 0x00000005U; /* R5 */
+    *(--sp_blinky1) = 0x00000004U; /* R4 */
 	
 }
 
