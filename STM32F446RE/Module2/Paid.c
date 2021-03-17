@@ -34,3 +34,9 @@ void OSThread_start(
     OSThread *me,
     OSThreadHandler threadHandler,
     void *stkSto, uint32_t stkSize);
+
+{
+	
+	
+}
+
