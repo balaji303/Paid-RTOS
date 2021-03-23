@@ -21,32 +21,28 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
 Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
-C:\Users\Balaji\Documents\GitHub\Paid-RTOS\STM32F446RE\Module2\Mod1.uvprojx
-Project File Date:  03/16/2021
+C:\Users\Balaji\Documents\GitHub\PaidRTOS\STM32F446RE\Module2\Mod1.uvprojx
+Project File Date:  03/22/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
-compiling paid.c...
-paid.h(17): error:  #169: expected a declaration
-  {
-paid.h(23): warning:  #1-D: last line of file ends without a newline
-  	
-paid.c: 1 warning, 1 error
 compiling main.c...
-paid.h(17): error:  #169: expected a declaration
-  {
-paid.h(23): warning:  #1-D: last line of file ends without a newline
+paid.h(21): warning:  #1-D: last line of file ends without a newline
   	
-main.c(37): error:  #20: identifier "sp_blinky1" is undefined
-      *(--sp_blinky1) = (1U << 24);  /* xPSR */
-main.c(56): error:  #20: identifier "sp_blinky2" is undefined
-      *(--sp_blinky2) = (1U << 24);  /* xPSR */
-main.c: 1 warning, 3 errors
+main.c: 1 warning, 0 errors
+compiling paid.c...
+paid.h(21): warning:  #1-D: last line of file ends without a newline
+  	
+paid.c(69): warning:  #1-D: last line of file ends without a newline
+   
+paid.c: 2 warnings, 0 errors
 assembling startup_stm32f446xx.s...
-compiling bsp.c...
 compiling system_stm32f4xx.c...
-".\Objects\Mod1.axf" - 4 Error(s), 2 Warning(s).
+compiling bsp.c...
+linking...
+Program Size: Code=1164 RO-data=508 RW-data=16 ZI-data=1952  
+".\Objects\Mod1.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -72,13 +68,12 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.3.0
 
    * Component: Keil::Device:Startup:2.6.3
-      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
-      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-      Source file:   MDK\Device\Source\ARM\STM32F446xx_OPT.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   MDK\Device\Source\ARM\STM32F446xx_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Target not created.
-Build Time Elapsed:  00:00:05
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

@@ -33,8 +33,7 @@
 void OSThread_start(
     OSThread *me,
     OSThreadHandler threadHandler,
-    void *stkSto, uint32_t stkSize);
-
+    void *stkSto, uint32_t stkSize)
 {
 			uint32_t *sp=(uint32_t *)((((uint32_t)stkSto + stkSize)/8)*8);
 			uint32_t *stk_limit;
@@ -58,6 +57,13 @@ void OSThread_start(
     *(--sp) = 0x00000004U; /* R4 */
 	
 		me->sp=sp;
-		stk_limit= (((((uint32_t *)stkSto-1U)/8)+1U)*8);
-}
+		stk_limit= (uint32_t *)(((((uint32_t)stkSto - 1U ) / 8 )+ 1U)* 8);
+		for(sp=sp-1U;sp>=stk_limit;--sp)
+		{
+			*sp=0xDEADBEEFU;
+		}
+		
+ }
 
+
+ 
