@@ -36,23 +36,28 @@ void OSThread_start(
     void *stkSto, uint32_t stkSize);
 
 {
-	  *(--sp_blinky1) = (1U << 24);  /* xPSR */
-    *(--sp_blinky1) = (uint32_t)&main_blinky1; /* PC */
-    *(--sp_blinky1) = 0x0000000EU; /* LR  */
-    *(--sp_blinky1) = 0x0000000CU; /* R12 */
-    *(--sp_blinky1) = 0x00000003U; /* R3  */
-    *(--sp_blinky1) = 0x00000002U; /* R2  */
-    *(--sp_blinky1) = 0x00000001U; /* R1  */
-    *(--sp_blinky1) = 0x00000000U; /* R0  */
+			uint32_t *sp=(uint32_t *)((((uint32_t)stkSto + stkSize)/8)*8);
+			uint32_t *stk_limit;
+				
+	  *(--sp) = (1U << 24);  /* xPSR */
+    *(--sp) = (uint32_t)&threadHandler; /* PC */
+    *(--sp) = 0x0000000EU; /* LR  */
+    *(--sp) = 0x0000000CU; /* R12 */
+    *(--sp) = 0x00000003U; /* R3  */
+    *(--sp) = 0x00000002U; /* R2  */
+    *(--sp) = 0x00000001U; /* R1  */
+    *(--sp) = 0x00000000U; /* R0  */
     /* additionally, fake registers R4-R11 */
-    *(--sp_blinky1) = 0x0000000BU; /* R11 */
-    *(--sp_blinky1) = 0x0000000AU; /* R10 */
-    *(--sp_blinky1) = 0x00000009U; /* R9 */
-    *(--sp_blinky1) = 0x00000008U; /* R8 */
-    *(--sp_blinky1) = 0x00000007U; /* R7 */
-    *(--sp_blinky1) = 0x00000006U; /* R6 */
-    *(--sp_blinky1) = 0x00000005U; /* R5 */
-    *(--sp_blinky1) = 0x00000004U; /* R4 */
+    *(--sp) = 0x0000000BU; /* R11 */
+    *(--sp) = 0x0000000AU; /* R10 */
+    *(--sp) = 0x00000009U; /* R9 */
+    *(--sp) = 0x00000008U; /* R8 */
+    *(--sp) = 0x00000007U; /* R7 */
+    *(--sp) = 0x00000006U; /* R6 */
+    *(--sp) = 0x00000005U; /* R5 */
+    *(--sp) = 0x00000004U; /* R4 */
 	
+		me->sp=sp;
+		stk_limit= (((((uint32_t *)stkSto-1U)/8)+1U)*8);
 }
 
