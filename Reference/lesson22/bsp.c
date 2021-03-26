@@ -1,13 +1,16 @@
 /* Board Support Package (BSP) for the STM32F446RE board */
 #include <stdint.h>  /* Standard integers. WG14/N843 C99 Standard */
-
 #include "bsp.h"
+#include "C:\Users\Balaji\Documents\GitHub\PaidRTOS\STM32F446RE\Module2\paid.h"
 #include "stm32f4xx.h"                  /* Device header */
 
 static uint32_t volatile l_tickCtr;
 
 void SysTick_Handler(void) {
     ++l_tickCtr;
+	 __disable_irq();
+	 OS_sched();
+	 __enable_irq();
 }
 
 void BSP_init(void) {
@@ -16,11 +19,14 @@ void BSP_init(void) {
     GPIOF_AHB->DIR |= (LED_RED | LED_BLUE | LED_GREEN);
     GPIOF_AHB->DEN |= (LED_RED | LED_BLUE | LED_GREEN);
 		*/
+	  __disable_irq();
 		RCC->AHB1ENR|=1;
 		GPIOA->MODER |= 0x400;
 		SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / BSP_TICKS_PER_SEC);
-    __enable_irq();
+    
+	  NVIC_SetPriority(SysTick_IRQn,0U); 
+	  __enable_irq();
 }
 
 uint32_t BSP_tickCtr(void) {

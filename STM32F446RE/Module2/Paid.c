@@ -54,7 +54,17 @@ void OSThread_start(
 		
  }
  
+ /*Context switch inside PendSV*/
  void PendSV_Handler(void){
-	   
+	   void *sp; //Pointer for SP register
+     __disable_irq();
+   	 if (OS_curr != (OSThread *)0){
+			  /*Push the register r4-r11 on the stack*/
+				OS_curr->sp = sp;
+		 }
+		 sp=OS_next->sp;
+		 OS_curr=OS_next;
+		 /*Pop the register r4-r11 on the stack*/
+		 __enable_irq();
  }
  
