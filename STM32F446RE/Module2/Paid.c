@@ -55,16 +55,47 @@ void OSThread_start(
  }
  
  /*Context switch inside PendSV*/
- void PendSV_Handler(void){
-	   void *sp; //Pointer for SP register
-     __disable_irq();
-   	 if (OS_curr != (OSThread *)0){
-			  /*Push the register r4-r11 on the stack*/
-				OS_curr->sp = sp;
-		 }
-		 sp=OS_next->sp;
-		 OS_curr=OS_next;
-		 /*Pop the register r4-r11 on the stack*/
-		 __enable_irq();
- }
+__asm 
+void PendSV_Handler(void) {
+    IMPORT  OS_curr  /* extern variable */
+    IMPORT  OS_next  /* extern variable */
+   
+    /* __disable_irq(); */
+    CPSID         I
+
+    /* if (OS_curr != (OSThread *)0) { */ 
+    LDR           r1,=OS_curr
+    LDR           r1,[r1,#0x00]
+    CBZ           r1,PendSV_restore
+
+    /*     push registers r4-r11 on the stack */
+    PUSH          {r4-r11}    
+
+    /*     OS_curr->sp = sp; */ 
+    LDR           r1,=OS_curr
+    LDR           r1,[r1,#0x00]
+    STR           sp,[r1,#0x00]
+    /* } */
+
+PendSV_restore    
+    /* sp = OS_next->sp; */
+    LDR           r1,=OS_next
+    LDR           r1,[r1,#0x00]
+    LDR           sp,[r1,#0x00]
+
+    /* OS_curr = OS_next; */
+    LDR           r1,=OS_next
+    LDR           r1,[r1,#0x00]
+    LDR           r2,=OS_curr
+    STR           r1,[r2,#0x00]
+
+    /* pop registers r4-r11 */ 
+    POP           {r4-r11}    
+
+    /* __enable_irq(); */
+    CPSIE         I
+
+    /* return to the next thread */
+    BX            lr    
+}
  
