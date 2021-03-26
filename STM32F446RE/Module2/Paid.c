@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include "paid.h"
+#include "bsp.h"
 
 /*Points to the current thread*/
 OSThread * volatile OS_curr;
@@ -46,5 +47,9 @@ void OSThread_start(
 			*sp=0xDEADBEEFU;
 		}
 		
+ }
+ 
+ void PendSV_Handler(void){
+	   
  }
  

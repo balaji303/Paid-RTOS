@@ -10,6 +10,7 @@ typedef void (*OSThreadHandler)();
 
 void OS_init(void);
 
+/*This Function needs to called with Interrupt disabled*/
 void OS_sched(void);
 
 void OSThread_start(
