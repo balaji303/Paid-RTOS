@@ -8,6 +8,11 @@ OSThread * volatile OS_curr;
 /*Points to the next thread*/
 OSThread * volatile OS_next;
 
+/*
+* Trigger the Pendsv exception but only when
+* Next thread is not equal to the 
+* current thread
+*/
 void OS_sched(void){
 	if (OS_next!=OS_curr){
 		*(uint32_t volatile*)0xE000ED04 = (1U << 28); 	
