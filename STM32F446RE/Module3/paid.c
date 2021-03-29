@@ -14,6 +14,20 @@ OSThread * volatile OS_next;
 * current thread
 */
 void OS_sched(void){
+	/*Automatic scheduling but only works for two
+	functions
+	*/
+	extern OSThread blinky1;
+	extern OSThread blinky2;
+	
+	if(OS_curr == &blinky1){
+		OS_next = &blinky2;
+	}
+	else{
+		OS_next = &blinky1;
+	}
+	
+	
 	if (OS_next!=OS_curr){
 		*(uint32_t volatile*)0xE000ED04 = (1U << 28); 	
 	}
