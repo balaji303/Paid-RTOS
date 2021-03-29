@@ -25,6 +25,11 @@ void BSP_init(void) {
 		SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / BSP_TICKS_PER_SEC);
     
+	  /*
+	    Set the SysTick interrupt priority (highest)
+	   *Highest Priority is set for -> SysTick
+	   *Lowest Priority is set for ->PendSV interrupt
+	  */
 	  NVIC_SetPriority(SysTick_IRQn,0U); 
 	  __enable_irq();
 }
