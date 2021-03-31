@@ -48,11 +48,11 @@ void BSP_delay(uint32_t ticks) {
     }
 }
 
-void BSP_ledRedOn(void) {      /* Turns D13 PIN HIGH*/
+void BSP_ledGreenOn(void) {      /* Turns D13 PIN HIGH*/
     GPIOA->ODR |=0x20;
 }
 
-void BSP_ledRedOff(void) {     /* Turns D13 PIN LOW*/
+void BSP_ledGreenOff(void) {     /* Turns D13 PIN LOW*/
     GPIOA->ODR &=~0x20;
 }
 
@@ -64,11 +64,11 @@ void BSP_ledBlueOff(void) {    /* Turns D12 PIN LOW*/
     GPIOA->ODR &=~0x40;
 }
 
-void BSP_ledGreenOn(void) {    /* Turns D11 PIN HIGH*/
+void BSP_ledRedOn(void) {    /* Turns D11 PIN HIGH*/
     GPIOA->ODR |=0x80;
 }
 
-void BSP_ledGreenOff(void) {   /* Turns D11 PIN LOW*/
+void BSP_ledRedOff(void) {   /* Turns D11 PIN LOW*/
     GPIOA->ODR &=~0x80;
 }
 

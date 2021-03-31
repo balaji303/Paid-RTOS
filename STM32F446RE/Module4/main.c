@@ -21,9 +21,9 @@ uint32_t stack_blinky2[40] __attribute__ ((aligned (8)));
 OSThread blinky2;
 void main_blinky2() {
     while (1) {
-        BSP_ledBlueOn();
+        BSP_ledRedOn();
         BSP_delay(BSP_TICKS_PER_SEC / 2U);
-        BSP_ledBlueOff();
+        BSP_ledRedOff();
         BSP_delay(BSP_TICKS_PER_SEC / 3U);
     }
 }
@@ -44,6 +44,8 @@ int main() {
 									 sizeof(stack_blinky2));
      
     while (1) {
+			main_blinky2();
+			main_blinky1();
     }
 
     //return 0;                     /*Unreachable part of code*/
