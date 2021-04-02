@@ -1,8 +1,0 @@
-<map id="qf_mem.c" name="qf_mem.c">
-<area shape="rect" id="node1" title="QMPool implementatin (Memory Pool)" alt="" coords="195,5,274,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,77,107"/>
-<area shape="rect" id="node3" href="$qf__pkg_8h.html" title="Internal (package scope) QF/C interface." alt="" coords="102,80,173,107"/>
-<area shape="rect" id="node4" href="$qassert_8h.html" title="Customizable and memory&#45;efficient assertions for embedded systems." alt="" coords="197,80,273,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="297,80,373,107"/>
-<area shape="rect" id="node6" href="$qs__pkg_8h.html" title="Internal (package scope) QS/C interface." alt="" coords="397,80,472,107"/>
-</map>

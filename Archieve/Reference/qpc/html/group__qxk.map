@@ -1,8 +1,0 @@
-<map id="QXK" name="QXK">
-<area shape="rect" id="node1" href="$group__qep.html" title="Hierarchical Event Processor." alt="" coords="135,5,185,31"/>
-<area shape="rect" id="node2" title="Preemptive Dual&#45;Mode (Run&#45;to&#45;Completion/Blocking) RTOS Kernel." alt="" coords="5,104,53,129"/>
-<area shape="rect" id="node3" href="$group__qf.html" title="Active Object (Actor) Framework." alt="" coords="140,55,180,80"/>
-<area shape="rect" id="node4" href="$group__qk.html" title="Preemptive Run&#45;To&#45;Completion (Non&#45;Blocking) Kernel." alt="" coords="139,104,181,129"/>
-<area shape="rect" id="node5" href="$group__qs.html" title="Software Tracing Instrumentation." alt="" coords="139,153,181,179"/>
-<area shape="rect" id="node6" href="$group__qv.html" title="Cooperative Kernel." alt="" coords="139,203,181,228"/>
-</map>

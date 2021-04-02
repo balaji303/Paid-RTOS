@@ -1,6 +1,0 @@
-<map id="qxk.h" name="qxk.h">
-<area shape="rect" id="node1" title="QXK/C (preemptive dual&#45;mode kernel) platform&#45;independent public interface." alt="" coords="19,5,74,32"/>
-<area shape="rect" id="node2" href="$qxk__port_8h.html" title="QXK/C port example for a generic C compiler." alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node3" href="$qxk_2qf__port_8h.html" title="QF/C port example for QXK, generic C compiler." alt="" coords="11,155,83,181"/>
-<area shape="rect" id="node4" href="$qxk_2qs__port_8h.html" title="QS/C port to a 32&#45;bit CPU and a generic C compiler." alt="" coords="9,229,85,256"/>
-</map>

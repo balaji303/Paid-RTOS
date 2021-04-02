@@ -1,4 +1,0 @@
-<map id="QSrxPrivAttr" name="QSrxPrivAttr">
-<area shape="rect" id="node1" title="Private QS&#45;RX attributes to keep track of the current objects and the lock&#45;free RX buffer." alt="" coords="5,145,103,296"/>
-<area shape="rect" id="node2" href="$qpset_8h.html#struct_q_p_set" title="Priority Set of up to 32 elements." alt="" coords="23,5,85,83"/>
-</map>

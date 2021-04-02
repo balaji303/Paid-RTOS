@@ -1,7 +1,0 @@
-<map id="qv_port.h" name="qv_port.h">
-<area shape="rect" id="node1" title="QV/C port example for a generic C compiler." alt="" coords="112,5,187,32"/>
-<area shape="rect" id="node2" href="$qv_8h.html" title="QV/C (cooperative &quot;Vanilla&quot; kernel) platform&#45;independent public interface." alt="" coords="127,80,172,107"/>
-<area shape="rect" id="node3" href="$qequeue_8h.html" title="QP natvie, platform&#45;independent, thread&#45;safe event queue interface." alt="" coords="5,155,88,181"/>
-<area shape="rect" id="node4" href="$qmpool_8h.html" title="QP native, platform&#45;independent memory pool QMPool interface." alt="" coords="112,155,187,181"/>
-<area shape="rect" id="node5" href="$qpset_8h.html" title="QP native, platform&#45;independent priority sets of 32 or 64 elements." alt="" coords="211,155,277,181"/>
-</map>

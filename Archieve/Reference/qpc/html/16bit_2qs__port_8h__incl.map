@@ -1,5 +1,0 @@
-<map id="qs_port.h" name="qs_port.h">
-<area shape="rect" id="node1" title="QS/C port to a 16&#45;bit CPU and generic C compiler." alt="" coords="45,5,121,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,77,107"/>
-<area shape="rect" id="node3" href="$qs_8h.html" title="QS/C platform&#45;independent public interface." alt="" coords="102,80,149,107"/>
-</map>

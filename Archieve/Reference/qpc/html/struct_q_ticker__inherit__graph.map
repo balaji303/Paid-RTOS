@@ -1,5 +1,0 @@
-<map id="QTicker" name="QTicker">
-<area shape="rect" id="node1" title="QTicker Active Object class." alt="" coords="61,579,128,656"/>
-<area shape="rect" id="node2" href="$struct_q_active.html" title="Active Object base class (based on QHsm implementation)" alt="" coords="5,263,184,531"/>
-<area shape="rect" id="node3" href="$struct_q_hsm.html" title="Hierarchical State Machine class." alt="" coords="21,5,168,215"/>
-</map>

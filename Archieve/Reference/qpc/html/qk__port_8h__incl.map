@@ -1,7 +1,0 @@
-<map id="qk_port.h" name="qk_port.h">
-<area shape="rect" id="node1" title="QK/C port example for a generic C compiler." alt="" coords="111,5,187,32"/>
-<area shape="rect" id="node2" href="$qk_8h.html" title="QK/C (preemptive non&#45;blocking kernel) platform&#45;independent public interface." alt="" coords="126,80,173,107"/>
-<area shape="rect" id="node3" href="$qequeue_8h.html" title="QP natvie, platform&#45;independent, thread&#45;safe event queue interface." alt="" coords="5,155,88,181"/>
-<area shape="rect" id="node4" href="$qmpool_8h.html" title="QP native, platform&#45;independent memory pool QMPool interface." alt="" coords="112,155,187,181"/>
-<area shape="rect" id="node5" href="$qpset_8h.html" title="QP native, platform&#45;independent priority sets of 32 or 64 elements." alt="" coords="211,155,277,181"/>
-</map>

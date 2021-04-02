@@ -1,7 +1,0 @@
-<map id="qxk_pkg.h" name="qxk_pkg.h">
-<area shape="rect" id="node1" title="Internal (package scope) QXK/C interface." alt="" coords="151,5,234,32"/>
-<area shape="rect" id="node2" href="$qxk_8c.html" title="QXK preemptive dual&#45;mode kernel core functions." alt="" coords="5,80,60,107"/>
-<area shape="rect" id="node3" href="$qxk__mutex_8c.html" title="QXMutex_init(), QXMutex_lock(), QXMutex_tryLock() and QXMutex_unlock() definitions." alt="" coords="84,80,181,107"/>
-<area shape="rect" id="node4" href="$qxk__sema_8c.html" title="QXK preemptive kernel semaphore functions." alt="" coords="206,80,299,107"/>
-<area shape="rect" id="node5" href="$qxk__xthr_8c.html" title="QXK preemptive kernel extended (blocking) thread functions." alt="" coords="323,80,406,107"/>
-</map>

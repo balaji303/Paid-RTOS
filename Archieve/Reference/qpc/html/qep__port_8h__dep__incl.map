@@ -1,9 +1,0 @@
-<map id="qep_port.h" name="qep_port.h">
-<area shape="rect" id="node1" title="QEP/C port, generic C11 compiler." alt="" coords="226,5,309,32"/>
-<area shape="rect" id="node2" href="$qep__hsm_8c.html" title="QHsm implementation" alt="" coords="5,80,92,107"/>
-<area shape="rect" id="node3" href="$qep__msm_8c.html" title="QMsm implementation" alt="" coords="117,80,207,107"/>
-<area shape="rect" id="node4" href="$qk_2qf__port_8h.html" title="QF/C port example for QK, generic C compiler." alt="" coords="231,80,303,107"/>
-<area shape="rect" id="node5" href="$qv_2qf__port_8h.html" title="QF/C port example for QV, generic C compiler." alt="" coords="327,80,399,107"/>
-<area shape="rect" id="node6" href="$qxk_2qf__port_8h.html" title="QF/C port example for QXK, generic C compiler." alt="" coords="423,80,495,107"/>
-<area shape="rect" id="node7" href="$qxk_2qs__port_8h.html" title="QS/C port to a 32&#45;bit CPU and a generic C compiler." alt="" coords="421,155,497,181"/>
-</map>
