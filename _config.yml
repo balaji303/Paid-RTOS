@@ -1,2 +1,4 @@
 remote_theme: daviddarnes/alembic@main
 plugins: jekyll-remote-theme
+
+theme: jekyll-theme-hacker
