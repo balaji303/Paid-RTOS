@@ -16,7 +16,7 @@ and STM32F446RE
 
 ## Installation
 
-This document is for the latest Paid-RTOS **version-Little Finger**.
+This document is for the latest Paid-RTOS **version- Rupees 1**.
 
 - arm MDK Keil-u Vision
 - STM32F446RE-VET
