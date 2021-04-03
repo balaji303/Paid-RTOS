@@ -22,4 +22,13 @@ This document is for the latest Paid-RTOS **version- Rupees 1**.
 
 Download MDK-Arm from this [link](https://www.keil.com/download/product/)
 
+The STM32F4 family incorporates high-speed embedded memories and an extensive range of enhanced I/Os and peripherals connected to two APB buses, three AHB buses and a 32-bit multi-AHB bus matrix.
 
+  - 64-Kbyte of CCM (core coupled memory) data RAM
+  - LCD parallel interface, 8080/6800 modes
+  - Timer with quadrature (incremental) encoder input
+  - 5 V-tolerant I/Os
+  - Parallel camera interface
+  - True random number generator
+  - RTC: subsecond accuracy, hardware calendar
+  - 96-bit unique ID
