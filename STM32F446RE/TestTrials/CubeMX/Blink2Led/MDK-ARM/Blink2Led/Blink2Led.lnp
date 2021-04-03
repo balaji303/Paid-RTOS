@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"blink2led\startup_stm32f446xx.o"
+"blink2led\main.o"
+"blink2led\stm32f4xx_it.o"
+"blink2led\stm32f4xx_hal_msp.o"
+"blink2led\stm32f4xx_hal_tim.o"
+"blink2led\stm32f4xx_hal_tim_ex.o"
+"blink2led\stm32f4xx_hal_rcc.o"
+"blink2led\stm32f4xx_hal_rcc_ex.o"
+"blink2led\stm32f4xx_hal_flash.o"
+"blink2led\stm32f4xx_hal_flash_ex.o"
+"blink2led\stm32f4xx_hal_flash_ramfunc.o"
+"blink2led\stm32f4xx_hal_gpio.o"
+"blink2led\stm32f4xx_hal_dma_ex.o"
+"blink2led\stm32f4xx_hal_dma.o"
+"blink2led\stm32f4xx_hal_pwr.o"
+"blink2led\stm32f4xx_hal_pwr_ex.o"
+"blink2led\stm32f4xx_hal_cortex.o"
+"blink2led\stm32f4xx_hal.o"
+"blink2led\stm32f4xx_hal_exti.o"
+"blink2led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Blink2Led\Blink2Led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Blink2Led.map" -o Blink2Led\Blink2Led.axf
