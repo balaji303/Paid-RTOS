@@ -6,8 +6,6 @@
 This is my own RTOS build from scratch using keil u-Vision 5
 and STM32F446RE
 
-:star2: Star us on GitHub — it helps!
-
 
 ## Table of content
 
