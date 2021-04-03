@@ -16,7 +16,7 @@ and STM32F446RE
 
 ## Installation
 
-This document is for the latest Aimeos TYPO3 **20.10 release and later**.
+This document is for the latest Paid-RTOS **version-Little Finger**.
 
-- LTS release: 20.10 (TYPO3 9/10 LTS)
-- Beta release: 2021.01 (TYPO3 9/10 LTS)
+- arm MDK Keil-u Vision
+- STM32F446RE-VET
