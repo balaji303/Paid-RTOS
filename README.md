@@ -1,5 +1,5 @@
-<a href="https://aimeos.org/">
-    <img src="https://github.com/balaji303/Paid-RTOS/blob/master/_layouts/paid.png" alt="Aimeos logo" title="Aimeos" align="right" height="160" />
+<a href="https://github.com/balaji303/Paid-RTOS/">
+    <img src="https://github.com/balaji303/Paid-RTOS/blob/master/_layouts/paid.png" alt="Aimeos logo" title="Paid-RTOS" align="right" height="260" />
 </a>
 
 # Paid-RTOS
