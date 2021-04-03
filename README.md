@@ -16,5 +16,19 @@ and STM32F446RE
 
 This document is for the latest Paid-RTOS **version- Rupees 1**.
 
-- arm MDK Keil-u Vision
-- STM32F446RE-VET
+- arm MDK Keil µVision Version: 5.28.0.0 and above
+- STM32F446RE-VET with debugger ST-LINK/V2-1
+- Tool Version Numbers:
+-   Toolchain:        MDK-Lite  Version: 5.28.0.0
+-   Toolchain Path:    C:\Keil_v5\ARM\ARMCC\Bin
+-   C Compiler:         Armcc.exe        V5.06 update 6 (build 750)
+-   Assembler:          Armasm.exe        V5.06 update 6 (build 750)
+-   Linker/Locator:     ArmLink.exe        V5.06 update 6 (build 750)
+-   Library Manager:    ArmAr.exe        V5.06 update 6 (build 750)
+-   Hex Converter:      FromElf.exe        V5.06 update 6 (build 750)
+-   CPU DLL:               SARMCM3.DLL          V5.28.0.0
+-   Dialog DLL:         TCM.DLL              V1.36.2.0
+-   Target DLL:             STLink\ST-LINKIII-KEIL_SWO.dll      V3.0.6.0
+-   Dialog DLL:         TCM.DLL              V1.36.2.0
+
+
