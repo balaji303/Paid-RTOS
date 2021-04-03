@@ -16,10 +16,10 @@ and STM32F446RE
 
 This document is for the latest Paid-RTOS **version- Rupees 1**.
 
-- arm MDK Keil µVision Version: 5.28.0.0 and above
+- ARM MDK Keil µVision Version: 5.28.0.0 and above
 - Toolchain Path:    C:\Keil_v5\ARM\ARMCC\Bin
 - STM32F446RE-VET with debugger ST-LINK/V2-1
 
-Download from µVision this [link](https://www.keil.com/download/product/)
+Download MDK-Arm from this [link](https://www.keil.com/download/product/)
 
 
