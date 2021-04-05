@@ -74,7 +74,7 @@ uint32_t getTick(void){
 }
 
 void delaysec(uint32_t sec){
-	sec *=100;
+	sec *=1000;
 	uint32_t temp = getTick();
 	while((getTick()-temp)<sec){
 	}
