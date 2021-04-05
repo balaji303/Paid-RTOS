@@ -16,6 +16,12 @@ How to set a GPIO PIN as Output
 volatile uint32_t tick;
 volatile uint32_t _tick;
 
+uint32_t red_stack[40];
+uint32_t green_stack[40];
+
+uint32_t *sp_red = &red_stack[40];
+uint32_t *sp_green = &green_stack[40];
+
 void GPIO_init(void);
 int Red_LED(void);
 int Green_LED(void);
@@ -24,14 +30,44 @@ void SysTick_Handler(void);
 uint32_t getTick(void);
 
 int main(void){
-	uint32_t volatile control = 0U;
 	GPIO_init();
-	if(control){
-	Red_LED();
-	}
-	else{
-	Green_LED();
-	}
+/****Red LED Stack****/
+	/*xPSR*/
+	*(--sp_red) = (1u<<24);                 //Denotes THUMB Instruction
+	/*PC*/
+	*(--sp_red) = (uint32_t)&Red_LED;       //Point to the next address
+	/*LR*/
+	*(--sp_red) =  0xDEADBEEFU;
+	/*R12*/
+	*(--sp_red) =  0xDEADBEEFU;
+	/*R3*/
+	*(--sp_red) =  0xDEADBEEFU;  
+	/*R2*/
+	*(--sp_red) =  0xDEADBEEFU;
+	/*R1*/
+	*(--sp_red) =  0xDEADBEEFU;
+	/*R0*/
+	*(--sp_red) =  0xDEADBEEFU;
+	
+	
+/****Green LED Stack****/
+	/*xPSR*/
+	*(--sp_green) = (1u<<24);                 //Denotes THUMB Instruction
+	/*PC*/
+	*(--sp_green) = (uint32_t)&Green_LED;       //Point to the next address
+	/*LR*/
+	*(--sp_green) =  0xDEADBEEFU;
+	/*R12*/
+	*(--sp_green) =  0xDEADBEEFU;
+	/*R3*/
+	*(--sp_green) =  0xDEADBEEFU;  
+	/*R2*/
+	*(--sp_green) =  0xDEADBEEFU;
+	/*R1*/
+	*(--sp_green) =  0xDEADBEEFU;
+	/*R0*/
+	*(--sp_green) =  0xDEADBEEFU;
+	
 	while(1){	}                             //Not to terminate the main
 }
 
