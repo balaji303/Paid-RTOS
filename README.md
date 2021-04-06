@@ -10,7 +10,8 @@ and STM32F446RE
 ## Table of content
 
 - [Installation](#installation)
-- [Versions](#versions) 
+- [Versions](#versions)
+- [Docs](#docs) 
 
 ## Installation
 
@@ -26,3 +27,15 @@ Download MDK-Arm from this [link](https://www.keil.com/download/product/)
 
  These are the working verions of Paid-RTOS 
  The latest version is the **version - rupees2**
+ 
+ - [rupees1](https://github.com/balaji303/Paid-RTOS/tree/master/examples/rupees1)
+ - [rupees2](https://github.com/balaji303/Paid-RTOS/tree/master/examples/rupees2)
+
+## Docs
+
+ These are the documents used for the development
+ of Paid-RTOS for STM32F446RE
+ 
+ - [Data sheet](https://github.com/balaji303/Paid-RTOS/blob/master/STM32F446RE/Docs/Datasheet.pdf)
+ - [Reference Manual](https://github.com/balaji303/Paid-RTOS/blob/master/STM32F446RE/Docs/ReferenceManual.pdf)
+ - [User Manual](https://github.com/balaji303/Paid-RTOS/blob/master/STM32F446RE/Docs/UserManual.pdf)
