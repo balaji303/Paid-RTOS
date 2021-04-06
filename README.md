@@ -3,10 +3,9 @@
 </a>
 
 # Paid-RTOS
-- This is an RTOS build from scratch using keil µVision 5
-and STM32F446RE
 
-- This RTOS will work for all the Devices with 
+This is an RTOS build from scratch using keil µVision 5
+and STM32F446RE, will work for all the Devices with 
 Core- ARM® 32-bit Cortex®-M4 
 
 
