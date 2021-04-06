@@ -10,7 +10,7 @@ and STM32F446RE
 ## Table of content
 
 - [Installation](#installation)
-- [Version Historyy](#versionhistory) 
+- [Version History](#version history) 
 
 ## Installation
 
