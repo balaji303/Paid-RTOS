@@ -3,8 +3,11 @@
 </a>
 
 # Paid-RTOS
-This is an RTOS build from scratch using keil u-Vision 5
+This is an RTOS build from scratch using keil µVision 5
 and STM32F446RE
+
+This RTOS will work for all the Devices with 
+Core- ARM® 32-bit Cortex®-M4 
 
 
 ## Table of content
@@ -17,7 +20,7 @@ and STM32F446RE
 
  These are the software and hardware used in making of Paid-RTOS
 
-- ARM MDK Keil µVision Version: 5.28.0.0 and above
+- ARM® MDK Keil µVision Version: 5.28.0.0 and above
 - Toolchain Path:    C:\Keil_v5\ARM\ARMCC\Bin
 - STM32F446RE-VET with debugger ST-LINK/V2-1
 
