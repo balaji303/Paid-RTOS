@@ -10,7 +10,7 @@ and STM32F446RE
 ## Table of content
 
 - [Installation](#installation)
-- [Version History](#version history) 
+- [Versions](#versions) 
 
 ## Installation
 
@@ -22,5 +22,5 @@ This document is for the latest Paid-RTOS **version- Rupees 1**.
 
 Download MDK-Arm from this [link](https://www.keil.com/download/product/)
 
-## Version History
+## Versions
 
