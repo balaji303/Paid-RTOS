@@ -14,7 +14,7 @@ and STM32F446RE
 
 ## Installation
 
-This document is for the latest Paid-RTOS **version- Rupees 1**.
+ These are the software and hardware used in making of Paid-RTOS
 
 - ARM MDK Keil µVision Version: 5.28.0.0 and above
 - Toolchain Path:    C:\Keil_v5\ARM\ARMCC\Bin
@@ -24,3 +24,5 @@ Download MDK-Arm from this [link](https://www.keil.com/download/product/)
 
 ## Versions
 
+ These are the working verions of Paid-RTOS 
+ The latest version is the **version - rupees2**
