@@ -33,6 +33,7 @@ Download MDK-Arm from this [link](https://www.keil.com/download/product/)
  
  - [rupees1](https://github.com/balaji303/Paid-RTOS/tree/master/examples/rupees1)
  - [rupees2](https://github.com/balaji303/Paid-RTOS/tree/master/examples/rupees2)
+ - [rupees5](https://github.com/balaji303/Paid-RTOS/tree/master/examples/rupees5) Nightly Build
 
 ## Docs
 
