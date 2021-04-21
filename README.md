@@ -28,8 +28,9 @@ Download MDK-Arm from this [link](https://www.keil.com/download/product/)
 
 ## Versions
 
- These are the working verions of Paid-RTOS 
- The latest version is the **version - rupees2**
+ These are the working verions of Paid-RTOS
+ 
+ The latest stable version is the **version - rupees2**
  
  - [rupees1](https://github.com/balaji303/Paid-RTOS/tree/master/examples/rupees1)
  - [rupees2](https://github.com/balaji303/Paid-RTOS/tree/master/examples/rupees2)
