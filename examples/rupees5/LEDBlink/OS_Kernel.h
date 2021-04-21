@@ -10,7 +10,6 @@ void OsKernelLaunch(uint32_t QuantaSize);
 void OsKernelInit(void);
 
 uint8_t OsKernelAddThread( void (*task0)(void),
-													 void (*task1)(void),
-													 void (*task2)(void) );
+													 void (*task1)(void) );
 
 #endif

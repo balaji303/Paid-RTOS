@@ -37,20 +37,16 @@ void OsKernelStackInit(int ThreadNum){
 }
 
 uint8_t OsKernelAddThread( void (*task0)(void),
-													 void (*task1)(void),
-													 void (*task2)(void) )
+													 void (*task1)(void) )
 {
 	__disable_irq();
   tcbs[0].nextStructPt= &tcbs[1];	
-  tcbs[1].nextStructPt= &tcbs[2];
-	tcbs[2].nextStructPt= &tcbs[0];
+  tcbs[1].nextStructPt= &tcbs[0];
 	OsKernelStackInit(0);
 	TcbStack[0][STACKSIZE-2]= (int32_t)(task0); //Subtracted by two because of location of Program Counter register
 	OsKernelStackInit(1);
 	TcbStack[1][STACKSIZE-2]= (int32_t)(task1);
-	OsKernelStackInit(2);
-	TcbStack[2][STACKSIZE-2]= (int32_t)(task2);
-	
+
 	currentPt = &tcbs[0];
 	
   __enable_irq();					 

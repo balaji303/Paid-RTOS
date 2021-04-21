@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'rr1' 
+ * Project: 'LEDBlink_P' 
  * Target:  'Target 1' 
  */
 
