@@ -13,7 +13,7 @@ void Task1(void);
 void GPIO_init(void);
 void Red_LED(void);
 void Green_LED(void);
-void delaysec(uint32_t sec);
+void delay(uint32_t sec);
 
 
 int main(void){
@@ -49,21 +49,21 @@ void GPIO_init(void){
 void Red_LED(void){
 
 	GPIOA->ODR  |= RED_HIGH;               //Make D12 HIGH
-	delaysec(1000);
+	delay(1000);
 	GPIOA->ODR  &= ~RED_HIGH;              //Make D12 LOW
-	delaysec(1000);
+	delay(1000);
 	
 }
 void Green_LED(void){
 	
 	GPIOA->ODR  |= GREEN_HIGH;              //Make D13 HIGH
-	delaysec(1000);
+	delay(1000);
 	GPIOA->ODR  &= ~GREEN_HIGH;             //Make D13 LOW
-	delaysec(1000);
+	delay(1000);
 	
 }
 
-void delaysec(uint32_t sec){
+void delay(uint32_t sec){
 	for(;sec>0;sec--){
 		for(int i=0;i<3000;i++);
 	}

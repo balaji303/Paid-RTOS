@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\rr1.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\rr1.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Apr 21 07:38:46 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Apr 22 07:18:33 2021
 <BR><P>
 <H3>Maximum Stack Usage =         20 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -653,7 +653,7 @@ Global Symbols
 <P><STRONG><a name="[7b]"></a>Green_LED</STRONG> (Thumb, 44 bytes, Stack size 4 bytes, main.o(i.Green_LED))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Green_LED
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delaysec
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task0
 </UL>
@@ -686,7 +686,7 @@ Global Symbols
 <P><STRONG><a name="[81]"></a>Red_LED</STRONG> (Thumb, 44 bytes, Stack size 4 bytes, main.o(i.Red_LED))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Red_LED
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delaysec
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task1
 </UL>
@@ -708,7 +708,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
-<P><STRONG><a name="[7c]"></a>delaysec</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, main.o(i.delaysec))
+<P><STRONG><a name="[7c]"></a>delay</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, main.o(i.delay))
 <BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Red_LED
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Green_LED
 </UL>
