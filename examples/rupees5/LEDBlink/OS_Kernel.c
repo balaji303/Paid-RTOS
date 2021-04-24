@@ -28,25 +28,31 @@ tcb_t tcbs[NUM_OF_THREAD];
 tcb_t *currentPt;
 void OsSchedulerLaunch(void);
 
+/*Global Variables*/
 uint32_t MillisPrescaler;
 int32_t TcbStack[NUM_OF_THREAD][STACKSIZE];
 
+/**********************
+Initialise the Stack
+***********************/
 void OsKernelStackInit(int ThreadNum){
-	tcbs[ThreadNum].stackPt= &TcbStack[ThreadNum][STACKSIZE-16];         /*Each thread should point to the  Top of the same thread*/
-	TcbStack[ThreadNum][STACKSIZE-1]=0x01000000;                         /*Initialize the ExPSR register to 1 so the processor runs in Thumb mode*/
+	tcbs[ThreadNum].stackPt= &TcbStack[ThreadNum][STACKSIZE-16];          /*Each thread should point to the  Top of the same thread*/
+	TcbStack[ThreadNum][STACKSIZE-1]=0x01000000;                          /*Initialize the ExPSR register to 1 so the processor runs in Thumb mode*/     /*Initialize the ExPSR register to 1 so the processor runs in Thumb mode*/
 }
 
+/*********************
+Add the next thread threads and initialise the Stack 
+***********************/
 uint8_t OsKernelAddThread( void (*task0)(void),
 													 void (*task1)(void) )
 {
 	__disable_irq();
   tcbs[0].nextStructPt= &tcbs[1];	
-  tcbs[1].nextStructPt= &tcbs[0];
+  tcbs[1].nextStructPt= &tcbs[0];//Subtracted by two because of location of Program Counter register
 	OsKernelStackInit(0);
 	TcbStack[0][STACKSIZE-2]= (int32_t)(task0); //Subtracted by two because of location of Program Counter register
 	OsKernelStackInit(1);
 	TcbStack[1][STACKSIZE-2]= (int32_t)(task1);
-
 	currentPt = &tcbs[0];
 	
   __enable_irq();					 
@@ -60,9 +66,12 @@ void OsKernelInit(void){
 	__enable_irq();
 }
 
+/******************
+Loads the value for SysTick interrupt to occur which calls the OsSchedulerLaunch()
+******************/
 void OsKernelLaunch(uint32_t QuantaSize){
 	SysTick->CTRL =0; //Disable SysTick
-	SysTick->VAL  =0;
+	SysTick->VAL  =0; //Set the val to zero
 	SYSPRI3 = (SYSPRI3 & 0x00FFFFFF)|(0XE0000000); //Setting Priority as 7 (lowest)
   SysTick->LOAD =(QuantaSize*MillisPrescaler)-1 ; //Count values or countdown timer, -1 becauses start from zero
 	SysTick->CTRL = 0x00000007; //Enable SysTick

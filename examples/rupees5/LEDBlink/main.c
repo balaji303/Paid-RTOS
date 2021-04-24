@@ -1,5 +1,7 @@
+/*Includes*/
 #include "OS_Kernel.h"
 
+/*Constants*/
 #define QUANTA 10 //This makes each thread runs for 10 milli second
 #define GREEN_LED_PIN (1U<<10)
 #define RED_LED_PIN (1U<<12)
@@ -7,7 +9,7 @@
 #define GREEN_HIGH (1U<<5)
 #define RED_HIGH (1U<<6)
 
-
+/*Function Declaration*/
 void Task0(void);
 void Task1(void);
 void GPIO_init(void);
@@ -26,18 +28,30 @@ int main(void){
 	return 0;
 }
 
+/**********************
+Task0- Blinks Green LED
+at the rate of 1-sec
+***********************/
 void Task0(void){
 	while(1){
     Green_LED();
 	}
 }
 
+/**********************
+Task1- Blinks RED LED
+at the rate of 1-sec
+***********************/
 void Task1(void){
 	while(1){
     Red_LED();
 	}	
 }
 
+/**********************
+GPIO_init- Initialise
+the GPIO's
+***********************/
 void GPIO_init(void){
   __disable_irq();
 	RCC->AHB1ENR |= AHB1_BUS_ENABLE;       //Enable Clock for AHB1 Bus
@@ -46,6 +60,10 @@ void GPIO_init(void){
 	__enable_irq();
 }
 
+/**********************
+Task0- Blinks Green LED
+at the rate of 1-sec
+***********************/
 void Red_LED(void){
 
 	GPIOA->ODR  |= RED_HIGH;               //Make D12 HIGH
@@ -54,6 +72,11 @@ void Red_LED(void){
 	delay(1000);
 	
 }
+
+/**********************
+Task0- Blinks Green LED
+at the rate of 1-sec
+***********************/
 void Green_LED(void){
 	
 	GPIOA->ODR  |= GREEN_HIGH;              //Make D13 HIGH
@@ -63,6 +86,10 @@ void Green_LED(void){
 	
 }
 
+/**********************
+delay- delay function
+Argument-uint32_t sec
+***********************/
 void delay(uint32_t sec){
 	for(;sec>0;sec--){
 		for(int i=0;i<3000;i++);
