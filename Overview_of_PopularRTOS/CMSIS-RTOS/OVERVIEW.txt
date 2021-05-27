@@ -1,0 +1,11 @@
+-> API Based RTOS
+
+-> Not a Product
+
+-> RTOSs can be build using API's from CMSIS RTOS
+
+-> Thus a middleware can be developed from it
+
+-> You will still have access to vendor specific API's as well
+
+-> This is used in OS Emulation layer of existing RTOS
