@@ -9,3 +9,7 @@
 -> You will still have access to vendor specific API's as well
 
 -> This is used in OS Emulation layer of existing RTOS
+
+-> the CMSIS RTOS is just an API defined by ARM and not an actual real time operating system.
+
+Keil has offered a variant of their RTX RTOS which is compatible with the CMSIS RTOS API. So you can use a firmware written against the CMSIS RTOS API directly on the Keil RTX.
