@@ -1,0 +1,53 @@
+-> Define a thread function
+
+void thread1 (void const *argu){
+	while(1)
+	{
+	count++;
+	}
+}
+
+
+-> Define Thread parameter
+
+osThreaddef(thread1, //Thread
+                 osPriorityNormal, //Priority of the Thread
+	    1,//No. of instances
+	    0);//Stack size
+
+
+-> Terminate Thread
+
+osStatus osThreadTerminate (osThreadId thread_id);
+
+-> Create Thread
+
+Thread_id = osThreadCreate(osThread(thread1),NULL);
+
+-> Priority Levels
+
+osPriorityIdle (Lowest of All)
+osPriorityLow
+osPriorityBelowNormal
+osPriorityNormal
+osPriorityAboveNormal
+osPriorityHigh
+osPriorityRealTime (Higest of All)
+osPriorityError (Priority only for error codes)
+
+Kernel Parameters
+
+
+	-> OS_TASKCNT - No. of thread running at a given moment
+
+	-> OS_STKSIZE - Define the default stack size of the thread
+
+	-> OS_PRIVCNT - No. of thread with user defined stack
+
+	-> OS_TICK - Time intervel
+
+	-> OS_SYSTICK - Use SYSTICK or not as our time base
+
+	-> OS_ROBIN - Enable ROUND ROBIN
+
+	-> OS_ROBINTOUT - Set QUANTA
