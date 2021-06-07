@@ -8,11 +8,10 @@ void LedInit(void){
 
 void RedToggle(void){
 	//External LED is connected to PA6/D12
-	
+	GPIOA->ODR ^= 0x40;
 }
 
 void GreenToggle(void){
 	//Onboard LED is connected to PA5/D13
-	
-	
+	GPIOA->ODR ^= 0x20;	
 }
