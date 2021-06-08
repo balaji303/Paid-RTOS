@@ -1,12 +1,11 @@
 #include "cmsis_os.h"                   // ARM::CMSIS:RTOS:Keil RTX
-#include "stm32f4xx.h"                  // Device header
 #include "led.h"
 
 uint32_t count1, count2;
 
 void RedThread(void const *argument);
 void GreenThread(void const *argument);
-//void Thread3(void const *argument);
+
 
 osThreadDef(RedThread,										// Name of the thread
 						osPriorityNormal,           // Priority Level
@@ -18,17 +17,10 @@ osThreadDef(GreenThread,										// Name of the thread
 						1,													//No. of Instance
 						0);										  		//Stack size
 
-/*osThreadDef(Thread3,										// Name of the thread
-						osPriorityNormal,           // Priority Level
-						1,													//No. of Instance
-						0);											  	//Stack size*/
-
 int main(void){
-	
+	LedInit();
 	osThreadCreate(osThread(RedThread),NULL);
 	osThreadCreate(osThread(GreenThread),NULL);
-//	osThreadCreate(osThread(Thread3),NULL);
-
 	
  return 0;	
 }
@@ -37,18 +29,14 @@ int main(void){
 void RedThread(void const *argument){
 	while(1){
 	RedToggle();
+	osDelay(500);
 	}
 }
 
 void GreenThread(void const *argument){
 	while(1){
 	GreenToggle();
+	osDelay(500);
 	}
 }
-
-/*void Thread3(void const *argument){
-	while(1){
-	count3++;
-	}
-}*/
 
