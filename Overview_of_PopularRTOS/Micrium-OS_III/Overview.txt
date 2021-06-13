@@ -56,3 +56,5 @@ TaskHandle_t *pxCreatedTask
 
 
 -> Lower the numberr higher the priority of the Task
+
+-> Micrium OS is available only for Simplicity Studio IDE which is made for Silicon Labs product
